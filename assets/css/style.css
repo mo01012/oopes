@@ -16,6 +16,12 @@
     left: 0;
 }
 
+input:hover,
+input:focus,
+input:focus-visible {
+    border: 0px transparent;
+}
+
 header.head {
     background-image: url(../imgs/bg.png);
     background-repeat: no-repeat;
