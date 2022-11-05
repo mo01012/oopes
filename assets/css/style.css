@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d8697c
+}
+
+.float {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+header.head {
+    background-image: url(../imgs/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header.head div.top {
+    position: relative;
+    top: -58px;
+    right: -42px;
+}
+
+header.head div.top img {
+    width: 50px;
+}
+
+.login {
+    font-size: 25px;
+    color: #fff;
+}
+
+.login span {
+    font-size: 15px;
+    color: var(--main-color);
+    display: inline-block;
+    letter-spacing: -1.5px;
+    width: 100px;
+    text-align: center;
+}
+
+.bg {
+    background-image: url(../imgs/bg-3.png);
+}
+
+.main-bg {
+    background-image: url(../imgs/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.snd-bg {
+    background-image: url(../imgs/snd-bg.png);
+    background-position: center;
+}
+
+.el-bg {
+    background-image: url(../imgs/el-bg.png);
+    background-position: center;
+}
+
+.main-colo {
+    color: var(--main-color)
+}
+
+
+/* sart login page */
+
+.round {
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px 10px #cdcdcc;
+}
+
+.round-start {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.input {
+    margin: 50px auto 0;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    padding: 0px 10px
+}
+
+.input-1 {
+    margin: 50px auto 0;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    padding: 0px 10px
+}
+
+.input input {
+    background: transparent;
+    border: transparent;
+    width: 240px;
+    color: #fff;
+}
+
+.p-cen-y {
+    height: 100%
+}
+
+.cen-y {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:990px) {
+    .round-start {
+        border-top-left-radius: 0rem;
+        border-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+    }
+}
+
+
+/* end login page */
