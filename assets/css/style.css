@@ -1,11 +1,12 @@
+:root {
+    --main-color: #d8697c
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --main-color: #d8697c
+    
 }
 
 .float {
@@ -26,16 +27,23 @@ header.head {
     background-image: url(../imgs/bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 50px;
 }
 
-header.head div.top {
+img {
+    width: 100%;
+    height: auto;
+}
+
+header .top {
     position: relative;
-    top: -58px;
-    right: -42px;
+    top: 170px;
+    right: -675px;
+    display: inline-block;
 }
 
-header.head div.top img {
-    width: 50px;
+header.head img {
+    width: 75%;
 }
 
 .login {
@@ -70,10 +78,136 @@ header.head div.top img {
 .el-bg {
     background-image: url(../imgs/el-bg.png);
     background-position: center;
+    min-height: 400px;
+    height: 100%;
 }
 
 .main-colo {
     color: var(--main-color)
+}
+
+footer.foot {
+    color: var(--main-color)
+}
+
+footer .top {
+    position: relative;
+    top: 50px;
+    right: -175px;
+    display: inline-block
+}
+
+footer .h2 {
+    height: 75px;
+    margin: 10px auto;
+}
+
+footer .top img {
+    width: 40px;
+}
+
+@media screen and (max-width:1200px) {
+    header .top {
+        top: 200px;
+        right: -700px;
+    }
+    header.head img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    header .top {
+        top: 160px;
+        right: -600px;
+    }
+    footer .top {
+        right: 45px;
+    }
+}
+
+@media screen and (max-width:989px) {
+    .el-bg {
+        height: 400px;
+    }
+    header .top {
+        top: 150px;
+    }
+    footer .top {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .top {
+        top: 140px;
+        right: -475px;
+    }
+    footer .top img {
+        width: 80px;
+    }
+    footer .top {
+        right: -400px;
+        top: 120px
+    }
+}
+
+@media screen and (max-width:650px) {
+    header .top {
+        top: -60px;
+        right: -60px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    footer .top {
+        right: -300px;
+        top: 100px;
+    }
+    footer .h2 {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    header .top {
+        top: -50px;
+        right: -50px;
+    }
+    footer .top img {
+        width: 60px;
+    }
+    footer .top {
+        right: -235px;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    header .top {
+        top: -35px;
+        right: -35px;
+    }
+    footer .top img {
+        width: 40px;
+    }
+    footer .top {
+        right: -180px;
+        top: 55px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header .top {
+        top: -35px;
+        right: -35px;
+    }
+    header.head div.top img {
+        width: 50px;
+    }
+    .opes {
+        width: 250px;
+    }
 }
 
 
@@ -82,11 +216,6 @@ header.head div.top img {
 .round {
     border-radius: 1.5rem;
     box-shadow: 0 10px 20px 10px #cdcdcc;
-}
-
-.round-start {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
 }
 
 .input {
@@ -112,10 +241,6 @@ header.head div.top img {
     color: #fff;
 }
 
-.p-cen-y {
-    height: 100%
-}
-
 .cen-y {
     position: absolute;
     top: 50%;
@@ -123,13 +248,36 @@ header.head div.top img {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width:990px) {
-    .round-start {
-        border-top-left-radius: 0rem;
-        border-bottom-right-radius: 1.5rem;
-        border-bottom-left-radius: 1.5rem;
+@media screen and (max-width:320px) {
+    .input {
+        width: 200px;
+    }
+    .input input {
+        width: 125px;
     }
 }
 
 
 /* end login page */
+
+
+/* start sign-in page */
+
+span.cericle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ff8a5c;
+}
+
+span.cericle+p {
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px 0;
+    top: -2px;
+    color: var(--main-color);
+}
+
+
+/* end sign-in page */
