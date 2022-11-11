@@ -305,10 +305,6 @@ header.head .cen-y {
 
 /* start main  */
 
-main.main {
-    height: 4000px;
-}
-
 .bg-1 {
     background-image: linear-gradient(to right, #d0475e, #ff8a5c);
     box-shadow: 0px 20px 20px 0px #9f9b9b61;
@@ -323,6 +319,10 @@ select {
     padding-right: 15px;
     border: 0;
     -webkit-appearance: none;
+}
+
+.h100 {
+    height: 100px;
 }
 
 select::-ms-expand {
@@ -353,7 +353,7 @@ button:focus {
 }
 
 nav.down {
-    top: 150px;
+    margin-top: 50px;
 }
 
 .nav-icon-1 {
@@ -387,6 +387,42 @@ nav.down svg {
     background-image: linear-gradient( #0ccbe0, #24939b);
 }
 
+.add h2.main-colo {
+    border-right: 5px solid #ff8a5c;
+    padding: 10px;
+}
+
+.add .card {
+    background-image: url(../imgs/bg-3.png);
+    border-radius: 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 20px 0px #725e5e;
+}
+
+.add .card .round-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.more {
+    width: 300px;
+    margin: 30px 0;
+    background-image: linear-gradient( #d0475e, #ff8a5c);
+    box-shadow: 0px 20px 20px 0px #9f9b9b61;
+}
+
+footer.yellow {
+    background-image: url(../imgs/yellow.png);
+}
+
+.w-300 {
+    width: 500px
+}
+
+.fon-color {
+    color: #fe8f64
+}
+
 @media screen and (max-width:990px) {
     select+svg.main-color {
         right: -40px;
@@ -400,7 +436,7 @@ nav.down svg {
         margin: 30px 10px;
     }
     nav.down {
-        top: 200px;
+        margin-top: 100px;
     }
 }
 
@@ -411,6 +447,16 @@ nav.down svg {
     .bg-1 {
         width: 100%;
         top: 30px;
+    }
+    .h100 {
+        padding: 00px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .w-300 {
+        width: 250px;
+        margin: 3rem 0!important;
     }
 }
 
