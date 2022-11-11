@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.main-color {
+    color: var(--main-color)
+}
+
 .float {
     position: absolute;
     top: 0;
@@ -26,7 +30,8 @@ header.head {
     background-image: url(../imgs/bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
+    background-size: cover;
 }
 
 img {
@@ -247,6 +252,11 @@ footer .top img {
     transform: translate(-50%, -50%);
 }
 
+.h11 {
+    height: 100px;
+    margin-top: 50px;
+}
+
 @media screen and (max-width:320px) {
     .input {
         width: 200px;
@@ -280,3 +290,139 @@ span.cericle+p {
 
 
 /* end sign-in page */
+
+
+/* start index page */
+
+.h400 {
+    height: 400px;
+}
+
+header.head .cen-y {
+    width: 25%
+}
+
+
+/* start main  */
+
+main.main {
+    height: 4000px;
+}
+
+.bg-1 {
+    background-image: linear-gradient(to right, #d0475e, #ff8a5c);
+    box-shadow: 0px 20px 20px 0px #9f9b9b61;
+    width: max-content
+}
+
+input.inp,
+select {
+    width: 300px;
+    height: 40px;
+    margin: 30px 5px;
+    padding-right: 15px;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select+svg.main-color {
+    font-size: 20px;
+    position: relative;
+    right: 120px;
+    top: -65px;
+}
+
+button {
+    margin-left: 5px;
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+button:hover,
+button:focus {
+    box-shadow: none!important;
+    color: rgba(0, 0, 0, .5)!important;
+    opacity: 1!important;
+}
+
+nav.down {
+    top: 150px;
+}
+
+.nav-icon-1 {
+    background-image: linear-gradient( #d0475e, #ff8a5c);
+}
+
+button.dpdw {
+    margin: 1rem -2.75rem;
+    width: 200px;
+}
+
+button.dpdw:hover,
+button.dpdw:focus {
+    color: aliceblue!important;
+}
+
+nav.down svg {
+    width: calc(96px - 1.5rem);
+    height: calc(96px - 1.5rem);
+}
+
+.nav-icon-2 {
+    background-image: linear-gradient( #d0475e, #4d4445);
+}
+
+.nav-icon-3 {
+    background-image: linear-gradient( #fc885b, #4d4445);
+}
+
+.nav-icon-4 {
+    background-image: linear-gradient( #0ccbe0, #24939b);
+}
+
+@media screen and (max-width:990px) {
+    select+svg.main-color {
+        right: -40px;
+        top: -0px;
+    }
+    button {
+        margin: 0 0 10px;
+    }
+    input.inp,
+    select {
+        margin: 30px 10px;
+    }
+    nav.down {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header.head .login+.cen-y {
+        width: 75%
+    }
+    .bg-1 {
+        width: 100%;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    input.inp,
+    select {
+        width: 250px;
+    }
+}
+
+
+/* end main  */
+
+
+/* end index page */
