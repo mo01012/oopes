@@ -1,450 +1,500 @@
-     :root {
-        --main-color: #d8697c
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .main-color {
-        color: var(--main-color)
-    }
-    
-    .float {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    
-    input:hover,
-    input:focus,
-    input:focus-visible {
-        border: 0px transparent;
-    }
-    
-    header.head {
-        background-image: url(../imgs/bg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-bottom: 75px;
-        background-size: cover;
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-    }
-    
+:root {
+    --main-color: #d8697c
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-color {
+    color: var(--main-color)
+}
+
+.float {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+input:hover,
+input:focus,
+input:focus-visible {
+    border: 0px transparent;
+}
+
+header.head {
+    background-image: url(../imgs/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 75px;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header .top {
+    position: relative;
+    top: 170px;
+    right: -675px;
+    display: inline-block;
+}
+
+header.head img {
+    width: 75%;
+}
+
+.login {
+    font-size: 25px;
+    color: #fff;
+}
+
+.login span {
+    font-size: 15px;
+    color: var(--main-color);
+    display: inline-block;
+    letter-spacing: -1.5px;
+    width: 100px;
+    text-align: center;
+}
+
+.bg {
+    background-image: url(../imgs/bg-3.png);
+}
+
+.main-bg {
+    background-image: url(../imgs/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.snd-bg {
+    background-image: url(../imgs/snd-bg.png);
+    background-position: center;
+}
+
+.el-bg {
+    background-image: url(../imgs/el-bg.png);
+    background-position: center;
+    min-height: 400px;
+    height: 100%;
+}
+
+.main-colo {
+    color: var(--main-color)
+}
+
+.foot {
+    color: var(--main-color)
+}
+
+footer .top {
+    position: relative;
+    top: 50px;
+    right: -175px;
+    display: inline-block
+}
+
+footer .h2 {
+    height: 75px;
+    margin: 10px auto;
+}
+
+footer .top img {
+    width: 40px;
+}
+
+span.page-link.snd-bg.text-light {
+    border-radius: 0.5rem !important;
+    width: 30px;
+    border: 0;
+}
+
+@media screen and (max-width:1200px) {
     header .top {
-        position: relative;
-        top: 170px;
-        right: -675px;
-        display: inline-block;
+        top: 200px;
+        right: -700px;
     }
-    
     header.head img {
-        width: 75%;
+        width: 90%;
     }
-    
-    .login {
-        font-size: 25px;
-        color: #fff;
+}
+
+@media screen and (max-width:1000px) {
+    header .top {
+        top: 160px;
+        right: -600px;
     }
-    
-    .login span {
-        font-size: 15px;
-        color: var(--main-color);
-        display: inline-block;
-        letter-spacing: -1.5px;
-        width: 100px;
-        text-align: center;
-    }
-    
-    .bg {
-        background-image: url(../imgs/bg-3.png);
-    }
-    
-    .main-bg {
-        background-image: url(../imgs/bg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .snd-bg {
-        background-image: url(../imgs/snd-bg.png);
-        background-position: center;
-    }
-    
-    .el-bg {
-        background-image: url(../imgs/el-bg.png);
-        background-position: center;
-        min-height: 400px;
-        height: 100%;
-    }
-    
-    .main-colo {
-        color: var(--main-color)
-    }
-    
-    footer.foot {
-        color: var(--main-color)
-    }
-    
     footer .top {
-        position: relative;
-        top: 50px;
-        right: -175px;
-        display: inline-block
+        right: 45px;
     }
-    
+}
+
+@media screen and (max-width:989px) {
+    .el-bg {
+        height: 400px;
+    }
+    header .top {
+        top: 150px;
+    }
+    footer .top {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .top {
+        top: 140px;
+        right: -475px;
+    }
+    footer .top img {
+        width: 80px;
+    }
+    footer .top {
+        right: -400px;
+        top: 120px
+    }
+}
+
+@media screen and (max-width:650px) {
+    header .top {
+        top: -60px;
+        right: -60px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    footer .top {
+        right: -300px;
+        top: 100px;
+    }
     footer .h2 {
-        height: 75px;
-        margin: 10px auto;
+        width: 250px;
     }
-    
+}
+
+@media screen and (max-width:450px) {
+    header .top {
+        top: -50px;
+        right: -50px;
+    }
+    footer .top img {
+        width: 60px;
+    }
+    footer .top {
+        right: -235px;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    header .top {
+        top: -35px;
+        right: -35px;
+    }
     footer .top img {
         width: 40px;
     }
-    
-    @media screen and (max-width:1200px) {
-        header .top {
-            top: 200px;
-            right: -700px;
-        }
-        header.head img {
-            width: 90%;
-        }
+    footer .top {
+        right: -180px;
+        top: 55px;
     }
-    
-    @media screen and (max-width:1000px) {
-        header .top {
-            top: 160px;
-            right: -600px;
-        }
-        footer .top {
-            right: 45px;
-        }
+}
+
+@media screen and (max-width:320px) {
+    header .top {
+        top: -35px;
+        right: -35px;
     }
-    
-    @media screen and (max-width:989px) {
-        .el-bg {
-            height: 400px;
-        }
-        header .top {
-            top: 150px;
-        }
-        footer .top {
-            right: 60px;
-        }
+    header.head div.top img {
+        width: 50px;
     }
-    
-    @media screen and (max-width:768px) {
-        header .top {
-            top: 140px;
-            right: -475px;
-        }
-        footer .top img {
-            width: 80px;
-        }
-        footer .top {
-            right: -400px;
-            top: 120px
-        }
+    .opes {
+        width: 250px;
     }
-    
-    @media screen and (max-width:650px) {
-        header .top {
-            top: -60px;
-            right: -60px;
-        }
-    }
-    
-    @media screen and (max-width:575px) {
-        footer .top {
-            right: -300px;
-            top: 100px;
-        }
-        footer .h2 {
-            width: 250px;
-        }
-    }
-    
-    @media screen and (max-width:450px) {
-        header .top {
-            top: -50px;
-            right: -50px;
-        }
-        footer .top img {
-            width: 60px;
-        }
-        footer .top {
-            right: -235px;
-            top: 80px;
-        }
-    }
-    
-    @media screen and (max-width:375px) {
-        header .top {
-            top: -35px;
-            right: -35px;
-        }
-        footer .top img {
-            width: 40px;
-        }
-        footer .top {
-            right: -180px;
-            top: 55px;
-        }
-    }
-    
-    @media screen and (max-width:320px) {
-        header .top {
-            top: -35px;
-            right: -35px;
-        }
-        header.head div.top img {
-            width: 50px;
-        }
-        .opes {
-            width: 250px;
-        }
-    }
-    /* sart login page */
-    
-    .round {
-        border-radius: 1.5rem;
-        box-shadow: 0 10px 20px 10px #cdcdcc;
-    }
-    
+}
+
+
+/* sart login page */
+
+.round {
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px 10px #cdcdcc;
+}
+
+.input {
+    margin: 50px auto 0;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    padding: 0px 10px
+}
+
+.input-1 {
+    margin: 50px auto 0;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    padding: 0px 10px
+}
+
+.input input {
+    background: transparent;
+    border: transparent;
+    width: 240px;
+    color: #fff;
+}
+
+.cen-y {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h11 {
+    height: 100px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:320px) {
     .input {
-        margin: 50px auto 0;
-        width: 300px;
-        height: 50px;
-        font-size: 30px;
-        padding: 0px 10px
-    }
-    
-    .input-1 {
-        margin: 50px auto 0;
         width: 200px;
-        height: 40px;
-        font-size: 25px;
-        padding: 0px 10px
     }
-    
     .input input {
-        background: transparent;
-        border: transparent;
-        width: 240px;
-        color: #fff;
+        width: 125px;
     }
-    
-    .cen-y {
+}
+
+
+/* end login page */
+
+
+/* start sign-in page */
+
+span.cericle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ff8a5c;
+}
+
+span.cericle+p {
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px 0;
+    top: -2px;
+    color: var(--main-color);
+}
+
+
+/* end sign-in page */
+
+
+/* start index page */
+
+.h400 {
+    height: 400px;
+}
+
+header.head .cen-y {
+    width: 25%
+}
+
+
+/* start main  */
+
+.bg-1 {
+    background-image: linear-gradient(to right, #d0475e, #ff8a5c);
+    box-shadow: 0px 20px 20px 0px #9f9b9b61;
+    width: max-content
+}
+
+input.inp,
+select {
+    width: 300px;
+    height: 40px;
+    margin: 15px 5px -10px 10px;
+    padding-right: 15px;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.h100 {
+    height: 100px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select+svg.main-color {
+    font-size: 20px;
+    position: relative;
+    right: 45%;
+    top: -40%;
+}
+
+button {
+    margin-left: 5px;
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+button:hover,
+button:focus {
+    box-shadow: none!important;
+    color: rgba(0, 0, 0, .5)!important;
+    opacity: 1!important;
+}
+
+nav.down {
+    margin-top: 50px;
+}
+
+.nav-icon-1 {
+    background-image: linear-gradient( #d0475e, #ff8a5c);
+}
+
+button.dpdw {
+    margin: 1rem -2.75rem;
+    width: 200px;
+}
+
+button.dpdw:hover,
+button.dpdw:focus {
+    color: aliceblue!important;
+}
+
+nav.down svg {
+    width: calc(96px - 1.5rem);
+    height: calc(96px - 1.5rem);
+}
+
+.nav-icon-2 {
+    background-image: linear-gradient( #d0475e, #4d4445);
+}
+
+.nav-icon-3 {
+    background-image: linear-gradient( #fc885b, #4d4445);
+}
+
+.nav-icon-4 {
+    background-image: linear-gradient( #0ccbe0, #24939b);
+}
+
+.add h2.main-colo {
+    border-right: 5px solid #ff8a5c;
+    padding: 10px;
+}
+
+.add .card {
+    background-image: url(../imgs/bg-3.png);
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 20px 0px #725e5e;
+}
+
+.add .card .round-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.more {
+    width: 300px;
+    margin: 30px 0;
+    background-image: linear-gradient( #d0475e, #ff8a5c);
+    box-shadow: 0px 20px 20px 0px #9f9b9b61;
+}
+
+footer.yellow {
+    background-image: url(../imgs/yellow.png);
+}
+
+.w-300 {
+    width: 500px
+}
+
+.fon-color {
+    color: #fe8f64
+}
+
+.hidden {
+    height: 100px;
+}
+
+.add-bg {
+    background-image: url(../imgs/bg-3.png);
+}
+
+@media screen and (max-width:990px) {
+    button {
+        margin: 30 0 10px;
+    }
+    nav.down {
+        margin-top: 100px;
+    }
+    .hidden {
+        width: 100%;
+        height: 35vh;
+        padding: 0;
+    }
+    .cen- {
         position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 15px;
+        transform: translate(-50%);
     }
-    
-    .h11 {
-        height: 100px;
-        margin-top: 50px;
+    select+svg.main-color-1 {
+        top: 0;
+        right: -5%;
     }
-    
-    @media screen and (max-width:320px) {
-        .input {
-            width: 200px;
-        }
-        .input input {
-            width: 125px;
-        }
+}
+
+@media screen and (max-width:768px) {
+    header.head .login+.cen-y {
+        width: 75%
     }
-    /* end login page */
-    /* start sign-in page */
-    
-    span.cericle {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        padding: 5px;
-        background-color: #ff8a5c;
-    }
-    
-    span.cericle+p {
-        display: inline-block;
-        position: relative;
-        padding: 5px 5px 0;
-        top: -2px;
-        color: var(--main-color);
-    }
-    /* end sign-in page */
-    /* start index page */
-    
-    .h400 {
-        height: 400px;
-    }
-    
-    header.head .cen-y {
-        width: 25%
-    }
-    /* start main  */
-    
     .bg-1 {
-        background-image: linear-gradient(to right, #d0475e, #ff8a5c);
-        box-shadow: 0px 20px 20px 0px #9f9b9b61;
-        width: max-content
+        width: 100%;
     }
-    
+    .h100 {
+        padding: 00px;
+    }
+    .hidden {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .w-300 {
+        width: 250px;
+        margin: 3rem 0!important;
+    }
+    .hidden {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width:320px) {
     input.inp,
     select {
-        width: 300px;
-        height: 40px;
-        margin: 15px 5px -10px 10px;
-        padding-right: 15px;
-        border: 0;
-        -webkit-appearance: none;
+        width: 250px;
     }
-    
-    .h100 {
-        height: 100px;
-    }
-    
-    select::-ms-expand {
-        display: none;
-    }
-    
-    select+svg.main-color {
-        font-size: 20px;
-        position: relative;
-        right: 45%;
-        top: -40%;
-    }
-    
-    button {
-        margin-left: 5px;
-        display: inline-block;
-        width: 75px;
-        height: 40px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    
-    button:hover,
-    button:focus {
-        box-shadow: none!important;
-        color: rgba(0, 0, 0, .5)!important;
-        opacity: 1!important;
-    }
-    
-    nav.down {
-        margin-top: 50px;
-    }
-    
-    .nav-icon-1 {
-        background-image: linear-gradient( #d0475e, #ff8a5c);
-    }
-    
-    button.dpdw {
-        margin: 1rem -2.75rem;
-        width: 200px;
-    }
-    
-    button.dpdw:hover,
-    button.dpdw:focus {
-        color: aliceblue!important;
-    }
-    
-    nav.down svg {
-        width: calc(96px - 1.5rem);
-        height: calc(96px - 1.5rem);
-    }
-    
-    .nav-icon-2 {
-        background-image: linear-gradient( #d0475e, #4d4445);
-    }
-    
-    .nav-icon-3 {
-        background-image: linear-gradient( #fc885b, #4d4445);
-    }
-    
-    .nav-icon-4 {
-        background-image: linear-gradient( #0ccbe0, #24939b);
-    }
-    
-    .add h2.main-colo {
-        border-right: 5px solid #ff8a5c;
-        padding: 10px;
-    }
-    
-    .add .card {
-        background-image: url(../imgs/bg-3.png);
-        border-radius: 1rem;
-        margin-top: 3rem;
-        box-shadow: 0 0 20px 0px #725e5e;
-    }
-    
-    .add .card .round-top {
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-    }
-    
-    .more {
-        width: 300px;
-        margin: 30px 0;
-        background-image: linear-gradient( #d0475e, #ff8a5c);
-        box-shadow: 0px 20px 20px 0px #9f9b9b61;
-    }
-    
-    footer.yellow {
-        background-image: url(../imgs/yellow.png);
-    }
-    
-    .w-300 {
-        width: 500px
-    }
-    
-    .fon-color {
-        color: #fe8f64
-    }
-    
-    @media screen and (max-width:990px) {
-        button {
-            margin: 0 0 10px;
-        }
-        nav.down {
-            margin-top: 100px;
-        }
-    }
-    
-    @media screen and (max-width:768px) {
-        header.head .login+.cen-y {
-            width: 75%
-        }
-        .bg-1 {
-            width: 100%;
-            top: 30px;
-        }
-        .h100 {
-            padding: 00px;
-        }
-    }
-    
-    @media screen and (max-width:570px) {
-        .w-300 {
-            width: 250px;
-            margin: 3rem 0!important;
-        }
-    }
-    
-    @media screen and (max-width:320px) {
-        input.inp,
-        select {
-            width: 250px;
-        }
-    }
-    /* end main  */
-    /* end index page */
+}
+
+
+/* end main  */
+
+
+/* end index page */
