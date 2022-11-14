@@ -6,10 +6,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cairo
 }
 
 .main-color {
     color: var(--main-color)
+}
+
+@keyframes tr {
+    0% {
+        right: 100%;
+    }
+    90% {
+        right: -10%;
+    }
+    100% {
+        right: 0;
+    }
 }
 
 .float {
@@ -102,8 +115,9 @@ footer .top {
 }
 
 footer .h2 {
-    height: 75px;
+    min-height: 75px;
     margin: 10px auto;
+    width: max-content
 }
 
 footer .top img {
@@ -114,6 +128,43 @@ span.page-link.snd-bg.text-light {
     border-radius: 0.5rem !important;
     width: 30px;
     border: 0;
+}
+
+.snd-color.bor {
+    border-left: 2px solid #ff8a5c;
+}
+
+.snd-color {
+    color: #ff8a5c
+}
+
+.after {
+    overflow: hidden;
+    padding: 5px
+}
+
+.after::after {
+    content: "";
+    width: calc(100% - 10px);
+    background-color: #5656568a;
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 100%;
+}
+
+.after:hover::after {
+    animation-name: tr;
+    animation-duration: 1s;
+    right: 5px;
+    top: 5px;
+}
+
+.none {
+    z-index: 15;
 }
 
 @media screen and (max-width:1200px) {
@@ -417,7 +468,7 @@ nav.down svg {
     box-shadow: 0px 20px 20px 0px #9f9b9b61;
 }
 
-footer.yellow {
+.yellow {
     background-image: url(../imgs/yellow.png);
 }
 
@@ -435,6 +486,48 @@ footer.yellow {
 
 .add-bg {
     background-image: url(../imgs/bg-3.png);
+}
+
+.float.z {
+    z-index: 20;
+}
+
+.cen- {
+    position: absolute;
+    left: 50%;
+    margin-top: 15px;
+    transform: translate(-50%);
+}
+
+.borde {
+    border-radius: 1.5rem;
+}
+
+.bggray {
+    background-color: #646464;
+}
+
+.bggray ul.safe li {
+    padding: 5px;
+    margin: 20px;
+}
+
+.bggray ul.safe li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ff8a5c;
+    display: inline-block;
+}
+
+div.cericle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ff8a5c;
 }
 
 @media screen and (max-width:990px) {
@@ -498,3 +591,17 @@ footer.yellow {
 
 
 /* end index page */
+
+
+/* end add-e3lan page */
+
+.bgOfwighte {
+    background-color: #f1f1f1;
+}
+
+.row-bg {
+    background-color: #ececec;
+}
+
+
+/* end add-e3lan page */
