@@ -33,10 +33,11 @@
     left: 0;
 }
 
-input:hover,
-input:focus,
-input:focus-visible {
-    border: 0px transparent;
+input,
+select,
+textarea {
+    outline: 0px transparent;
+    border: 0ch;
 }
 
 header.head {
@@ -393,6 +394,12 @@ select+svg.main-color {
     top: -40%;
 }
 
+select+svg.snd-color {
+    position: absolute;
+    right: 90%;
+    top: 55%;
+}
+
 button {
     margin-left: 5px;
     display: inline-block;
@@ -601,6 +608,12 @@ div.cericle {
 
 .row-bg {
     background-color: #ececec;
+}
+
+input[type="checkbox"] {
+    background-color: #fe8f64;
+    accent-color: #fe8f64;
+    font-size: 20px;
 }
 
 
